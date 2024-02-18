@@ -12,6 +12,7 @@ struct HomeView: View {
     @Binding var presentSideMenu: Bool
     @State var animate: Bool = true
     @State var loop: Bool = true
+    let url = URL(string: "https://freaks.dev/tram.gif")!
     
     var body: some View {
         VStack{
@@ -29,7 +30,7 @@ struct HomeView: View {
             }
             
             Spacer()
-            GIFImage(source: .local(filePath: "/Users/god/Xcode/tram/tram/Assets.xcassets/tram.dataset/tram.gif"), animate: $animate, loop: $loop).frame(maxWidth: .infinity,maxHeight: .infinity, alignment: .center)
+            GIFImage(source: .remoteURL(url), animate: $animate, loop: $loop).frame(maxWidth: .infinity,maxHeight: .infinity, alignment: .center)
         }
         .padding(.horizontal, 24)
     }
