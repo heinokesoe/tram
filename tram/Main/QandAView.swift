@@ -12,19 +12,19 @@ struct Bookmark: Identifiable {
     let text: String
     var items: [Bookmark]?
 
-    static let a1 = Bookmark(text: "answer1")
-    static let a2 = Bookmark(text: "answer2")
-    static let a3 = Bookmark(text: "answer3")
-    static let a4 = Bookmark(text: "answer4")
-    static let a5 = Bookmark(text: "answer5")
-    static let a6 = Bookmark(text: "answer6")
+    static let a1 = Bookmark(text: "It usually starts running at 8:30 a.m.")
+    static let a2 = Bookmark(text: "It normally stops at 4:30 p.m.")
+    static let a3 = Bookmark(text: "info@freaks.dev")
+    static let a4 = Bookmark(text: "There are 3 tram stops. IT Building, 7/11 and Queen Sheba.")
+    static let a5 = Bookmark(text: "5-10 mins (Yes tram is slow).")
+    static let a6 = Bookmark(text: "It depends on the AU authorities. We are trying.")
 
-    static let q1 = Bookmark(text: "question1", items: [Bookmark.a1])
-    static let q2 = Bookmark(text: "question2", items: [Bookmark.a2])
-    static let q3 = Bookmark(text: "question3", items: [Bookmark.a3])
-    static let q4 = Bookmark(text: "question4", items: [Bookmark.a4])
-    static let q5 = Bookmark(text: "question5", items: [Bookmark.a5])
-    static let q6 = Bookmark(text: "question6", items: [Bookmark.a6])
+    static let q1 = Bookmark(text: "When does the tram start running?", items: [Bookmark.a1])
+    static let q2 = Bookmark(text: "When does the tram stop working?", items: [Bookmark.a2])
+    static let q3 = Bookmark(text: "How can I contact for suggestion of this app?", items: [Bookmark.a3])
+    static let q4 = Bookmark(text: "How many tram stops are available in AU?", items: [Bookmark.a4])
+    static let q5 = Bookmark(text: "How long does it take between two stops?", items: [Bookmark.a5])
+    static let q6 = Bookmark(text: "Can we get more trams at peak hours?", items: [Bookmark.a6])
 
 }
 
