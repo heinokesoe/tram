@@ -14,8 +14,8 @@ struct SideMenu: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             if (isShowing) {
-                Color.black
-                    .opacity(0.3)
+                Color.text
+                    .opacity(0.1)
                     .ignoresSafeArea()
                     .onTapGesture {
                         isShowing.toggle()

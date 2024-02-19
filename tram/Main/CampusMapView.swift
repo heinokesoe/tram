@@ -53,6 +53,8 @@ struct CampusMapView: View {
                 } label: {
                     Image("menu")
                         .resizable()
+                        .renderingMode(.template)
+                        .foregroundColor(.text)
                         .frame(width: 32, height: 32)
                 }
                 Spacer().overlay(Text("Campus Map"), alignment: .trailing)

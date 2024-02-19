@@ -69,7 +69,7 @@ struct SideMenuView: View {
                 .padding(.top, 100)
                 .frame(width: 270)
                 .background(
-                    Color.white
+                    Color.sidebar
                 )
             }
             
@@ -87,27 +87,27 @@ struct SideMenuView: View {
             VStack(alignment: .leading){
                 HStack(spacing: 20){
                     Rectangle()
-                        .fill(isSelected ? .purple : .white)
+                        .fill(isSelected ? .purple : .sidebar)
                         .frame(width: 5)
                     
                     ZStack{
                         Image(imageName)
                             .resizable()
                             .renderingMode(.template)
-                            .foregroundColor(isSelected ? .black : .gray)
+                            .foregroundColor(.text)
                             .frame(width: 26, height: 26)
                     }
                     .frame(width: 30, height: 30)
                     Text(title)
                         .font(.system(size: 14, weight: .regular))
-                        .foregroundColor(isSelected ? .black : .gray)
+                        .foregroundColor(.text)
                     Spacer()
                 }
             }
         }
         .frame(height: 50)
         .background(
-            LinearGradient(colors: [isSelected ? .purple.opacity(0.5) : .white, .white], startPoint: .leading, endPoint: .trailing)
+            LinearGradient(colors: [isSelected ? .purple.opacity(0.5) : .sidebar, .sidebar], startPoint: .leading, endPoint: .trailing)
         )
     }
 }

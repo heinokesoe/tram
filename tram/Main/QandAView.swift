@@ -40,6 +40,8 @@ struct QandAView: View {
                 } label: {
                     Image("menu")
                         .resizable()
+                        .renderingMode(.template)
+                        .foregroundColor(.text)
                         .frame(width: 32, height: 32)
                 }
                 Spacer().overlay(Text("Q & A"), alignment: .trailing)

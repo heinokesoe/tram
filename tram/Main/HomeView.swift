@@ -22,6 +22,8 @@ struct HomeView: View {
                 } label: {
                     Image("menu")
                         .resizable()
+                        .renderingMode(.template)
+                        .foregroundColor(.text)
                         .frame(width: 32, height: 32)
                 }
                 Spacer().overlay(Text("Tram Tracker"), alignment: .trailing)
